@@ -19,7 +19,7 @@ can open in a block explorer.
 
 ### 1 · Land
 
-![Landing](../screen-shot/01-landing.jpg)
+![Landing](screen-shot/01-landing.jpg)
 
 The front door. You can browse funds without a wallet — connecting is only required to *sign*.
 Two destinations from here: open a new trip fund, or jump into an existing one. No spreadsheet, no
@@ -27,7 +27,7 @@ Two destinations from here: open a new trip fund, or jump into an existing one. 
 
 ### 2 · Connect
 
-![Freighter connect](../screen-shot/02-connect-popup.jpg)
+![Freighter connect](screen-shot/02-connect-popup.jpg)
 
 Tap connect and Freighter asks for access (`requestAccess`). Lakbay never sees a private key — the
 browser extension holds it. This is the only place a wallet is needed: to put a signature on a
@@ -35,7 +35,7 @@ transaction.
 
 ### 3 · Prove the key (SEP-10)
 
-![Sign the SEP-10 challenge](../screen-shot/03-sign-challenge-popup.jpg)
+![Sign the SEP-10 challenge](screen-shot/03-sign-challenge-popup.jpg)
 
 The server hands the wallet a signed SEP-10 challenge transaction; the wallet counter-signs it
 (this popup), and the server verifies the signature against your public key before issuing a session
@@ -44,7 +44,7 @@ connect works even if your wallet is parked on mainnet — no "wrong network" de
 
 ### 4 · Open / view a fund
 
-![Fund — live pool balance and ledger](../screen-shot/04-fund.jpg)
+![Fund — live pool balance and ledger](screen-shot/04-fund.jpg)
 
 A fund is a **pool inside the `TravelFundPool` contract**, keyed by `sha256(trip id)`. Creating one
 signs the `open_trip(organizer, trip_id, token)` invoke — that signature opens the on-chain pool and
@@ -53,7 +53,7 @@ makes you its organiser. The balance on this page is **read live from the contra
 
 ### 5 · Everyone chips in
 
-![Contribute XLM into the pool](../screen-shot/05-contribute.jpg)
+![Contribute XLM into the pool](screen-shot/05-contribute.jpg)
 
 Each traveller connects and contributes. The server builds + simulates the
 `contribute(member, trip_id, amount)` invoke, Freighter signs it, and the server submits it via the
@@ -63,7 +63,7 @@ address if they didn't set one.
 
 ### 6 · Spend in the open
 
-![Organiser spends from the pool](../screen-shot/06-spend.jpg)
+![Organiser spends from the pool](screen-shot/06-spend.jpg)
 
 The organiser pays a vendor — boat, guesthouse, van — straight from the pool by signing
 `spend(organizer, trip_id, payee, amount, memo)`. The contract releases the XLM and appends an
@@ -72,7 +72,7 @@ never more than the pool holds. Every in and out is one row with a `tx` link to 
 
 ### 7 · Honest numbers
 
-![Stats — real usage](../screen-shot/07-stats.jpg)
+![Stats — real usage](screen-shot/07-stats.jpg)
 
 `/stats` reads straight from the database: verified SEP-10 sign-ins, funds opened, and on-chain
 contributions and payouts. Demo/test wallets are excluded so the counts mean something — no inflated
@@ -80,7 +80,7 @@ contributions and payouts. Demo/test wallets are excluded so the counts mean som
 
 ### 8 · Pocket-sized
 
-![Mobile layout](../screen-shot/08-mobile.jpg)
+![Mobile layout](screen-shot/08-mobile.jpg)
 
 The whole flow — connect, contribute, spend, ledger — works on a phone, because trips get planned and
 paid for from one.
@@ -88,6 +88,21 @@ paid for from one.
 *Every screenshot above is a Playwright capture against the live deployment: real UI, real data.*
 
 ---
+
+## Real numbers
+
+Live from the deployment: verified SEP-10 sign-ins, funds opened, and on-chain contributions and spends, all served by `GET /api/stats`. Demo and test wallets are excluded.
+
+![Stats](screen-shot/stats.jpg)
+
+| Field | Value |
+|---|---|
+| Unique wallets | 58 |
+| Logins | 58 |
+| Trips opened | 2 |
+| Contributions | 2 |
+| Spends | 2 |
+| Volume (XLM) | 37 |
 
 ## Two assets, no trust traps
 
