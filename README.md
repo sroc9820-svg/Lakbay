@@ -88,6 +88,11 @@ paid for from one.
 *Every screenshot above is a Playwright capture against the live deployment: real UI, real data.*
 
 ---
+## Demo & Pitch Deck
+
+- **Demo Video:** [Watch Demo](https://drive.google.com/file/d/1oN6dELyqEHvJRgKs7sp8MW9SSY90P98T/view?usp=drive_link)
+- **Pitch Deck:** [View Pitch Deck](https://drive.google.com/file/d/1maz5s1sQx39fuYNNWpThiT8GUWlNoHVI/view?usp=drive_link)
+---
 
 ## Real numbers
 
