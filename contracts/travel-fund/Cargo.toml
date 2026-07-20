@@ -1,0 +1,17 @@
+[package]
+name = "travel-fund"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+description = "Soroban travel-fund pool contract: an organizer opens a trip pool, members contribute XLM on-chain (per-member + total tracked), and the organizer spends from the pool to payees while every payout (and end-of-trip refund) is appended to an immutable on-chain spend ledger. Powers the Lakbay group travel fund."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = "22"
+
+[dev-dependencies]
+soroban-sdk = { version = "22", features = ["testutils"] }
