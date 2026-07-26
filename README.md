@@ -16,7 +16,6 @@
 - [x] **Screenshots of analytics or transaction activity** — `screen-shot/07-stats.jpg` plus the on-chain `TravelFundPool` contract stats
 - [x] **Updated README and documentation** — [proof package](docs/level5-proof-package.md)
 - [x] **User feedback iteration summary** — [50-user feedback log](docs/user-feedback-log.md) and [improvement summary](docs/level5-feedback-iteration-summary.md)
-- [x] **Google Form question set** — [form template](docs/user-feedback-form.md) · [open live form](<LAKBAY_GOOGLE_FORM_URL>)
 - [x] **Google Sheet response export** — [open native Google Sheet](<LAKBAY_GOOGLE_SHEET_URL>)
 
 ### Monthly submission
@@ -245,7 +244,6 @@ PLAYWRIGHT_BASE_URL=https://lakbay-ashy.vercel.app xvfb-run -a npx playwright te
 This Level 5 evidence package accompanies the Submission Checklist above.
 
 - **50-user feedback cohort** — [user-feedback-log.md](docs/user-feedback-log.md) — 50 rows, each linking a name, email, real Stellar testnet public key, role (`organizer` or `member`), and written feedback.
-- **Feedback form template** — [user-feedback-form.md](docs/user-feedback-form.md) — the 9-question Google Form template mirror.
 - **Iteration summary** — [level5-feedback-iteration-summary.md](docs/level5-feedback-iteration-summary.md) — themes grouped by improvement, with delivery evidence.
 - **Wallet proof linkage** — [level5-wallet-proof-linkage.md](docs/level5-wallet-proof-linkage.md) — how to verify each public key against Horizon and the linked Google Sheet.
 - **Data integrity notes** — [level5-data-integrity-notes.md](docs/level5-data-integrity-notes.md) — audit invariants for the 50-row cohort.
@@ -279,11 +277,9 @@ curl https://horizon-testnet.stellar.org/accounts/<publicKey>
 Two URLs are placeholders until the headless Drive auth flow is run:
 
 ```
-<LAKBAY_GOOGLE_FORM_URL>     # live Google Form URL
 <LAKBAY_GOOGLE_SHEET_URL>    # native Google Sheet response export
 ```
 
-Setup follows the same pattern as the rest of the cohort. Once the project owner publishes the Google Form and links the native Google Sheet response export, replace the placeholders above.
 
 
 ## User feedback
@@ -294,20 +290,40 @@ The full transcript sits in [`docs/user-feedback-log.md`](docs/user-feedback-log
 | Artifact | Purpose |
 |---|---|
 | [`docs/user-feedback-log.md`](docs/user-feedback-log.md) | 60-user feedback log with date column |
-| [`docs/user-feedback-form.md`](docs/user-feedback-form.md) | Google Form template definition |
+| [`docs/user-feedback-form.md`](docs/user-feedback-form.md) | Form question template |
 | [`docs/level5-feedback-iteration-summary.md`](docs/level5-feedback-iteration-summary.md) | Feedback-to-iteration map |
-| Google Sheet response export | https://docs.google.com/spreadsheets/d/1jHmOivw_lRpQlc4g_fq8YdT_ecuQV4GMFlVrAm32r6s/edit?usp=drivesdk |
+| Google Sheet response export | https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk |
 
-## Google Form vs Google Sheet response
+## Google Sheet response
 
-The user-feedback Form (template in `docs/user-feedback-form.md`) and the native
-Google Sheet response export stay in sync. The table below records the parity
-check for this release.
+The native Google Sheet response export holds the user feedback. The table
+below records the parity check for this release.
 
 | Source | Rows | Count | Last verified |
 |---|---|---|---|
-| [Google Form template](https://docs.google.com/forms/d/e/1FAIpQLSfV6GxxKQl8JAoOpOcoiGyTnRsYvPx2XbWlH02pMykMsT7tvg/viewform) | questions | 9 | 2026-06-30 |
+| Google Sheet response export | responses | 60 | 2026-06-30 |
+| Local feedback log | entries | 60 | 2026-06-30 |
+
+Parity reached: **60 / 60** (no drift between Sheet and repo log).
+
+## User feedback
+
+This release gathers feedback from real participants across multiple roles.
+The full transcript sits in [`docs/user-feedback-log.md`](docs/user-feedback-log.md).
+
+| Artifact | Purpose |
+|---|---|
+| [`docs/user-feedback-log.md`](docs/user-feedback-log.md) | 60-user feedback log with date column |
+| [`docs/level5-feedback-iteration-summary.md`](docs/level5-feedback-iteration-summary.md) | Feedback-to-iteration map |
+| Google Sheet response export | https://docs.google.com/spreadsheets/d/1jHmOivw_lRpQlc4g_fq8YdT_ecuQV4GMFlVrAm32r6s/edit?usp=drivesdk |
+
+## Google Sheet response
+
+The native Google Sheet response export holds the user feedback. The table below records the parity check for this release.
+
+| Source | Rows | Count | Last verified |
+|---|---|---|---|
 | [Google Sheet response export](https://docs.google.com/spreadsheets/d/1jHmOivw_lRpQlc4g_fq8YdT_ecuQV4GMFlVrAm32r6s/edit?usp=drivesdk) | responses | 60 | 2026-06-30 |
 | Local feedback log | entries | 60 | 2026-06-30 |
 
-Parity reached: **60 / 60** (no drift between Form, Sheet, and repo log).
+Parity reached: **60 / 60** (no drift between Sheet and repo log).

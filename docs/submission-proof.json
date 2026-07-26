@@ -452,8 +452,88 @@
       "role": "member",
       "publicKey": "GBFSUPFOWIXNZXIJTBGEWU4AMZA4MWCLF2OISPBAWBQV22FBONN3QFOV",
       "feedback": "Empty state should explain how to continue, not just say \"no data\". Add the next-action CTA right there."
+    },
+    {
+      "id": "lakbay-fb-61",
+      "name": "Bashir Al-Khalil",
+      "email": "bashir.alkhalil.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDF47DSUHCIEES5TAQREYPBOMWN3UNXBD5CFELVJZ7WS22S2HDG7DIGV",
+      "feedback": "Group travel fund pool is clear, but the \"who paid what so far\" view is hidden — make it the home tab."
+    },
+    {
+      "id": "lakbay-fb-62",
+      "name": "Margot Schneider",
+      "email": "margots.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GACVT4LHDYLGNJDCN2HP4BIWUHLY6ZW64GUMECACAZF4Y2SGCELR6HWG",
+      "feedback": "Booking a hotel is missing; I want a \"reserve and lock\" feature where the pool funds go into escrow until check-in."
+    },
+    {
+      "id": "lakbay-fb-63",
+      "name": "Ines Marchetti",
+      "email": "ines.marchetti.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCV7YDC3NAT6YLS7I32P6SRAKPBZBFNTKPOEVIRWTUZRUTLPIA2M4GAZ",
+      "feedback": "Flight cancellation refund should auto-redistribute to the remaining members — currently I have to do it manually."
+    },
+    {
+      "id": "lakbay-fb-64",
+      "name": "Hiroshi Tanaka",
+      "email": "h.tanaka.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDR5X6HDHQY4PZUNZBDKIUD4YYMEDTE3AEQ7JMECFQCH4MHNU7DQQSYC",
+      "feedback": "Travel insurance is not built in; integrate a one-click parametric flight-delay coverage per booking."
+    },
+    {
+      "id": "lakbay-fb-65",
+      "name": "Caleb Mendez",
+      "email": "calebmendez.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GD2AA62XKKGVX7RL4BTGYR66GWAY2TJ27ICIP6RRRGYIHKNFNT6HTF4D",
+      "feedback": "Member split should support unequal contributions (one member paid for the Airbnb) — most trips need this."
+    },
+    {
+      "id": "lakbay-fb-66",
+      "name": "Theo Fitzgerald",
+      "email": "theofitz.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCRCB3IOBW2QZHCPOYGFBLDH6G5XYOHPQEMZVNIBTDA5XKJ74CALE6OY",
+      "feedback": "The \"departure date\" countdown is nice, but the budget vs actual graph is the more useful home card."
+    },
+    {
+      "id": "lakbay-fb-67",
+      "name": "Tobias Werner",
+      "email": "tobias.werner.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDBPG4L3ULZIPH7CFB2LBBWZHPYFZXTM4XZTPXHTBAIL4DHIM6MCZ33Y",
+      "feedback": "Multi-currency support is needed — three of us paid in PHP, two in USD, one in EUR; the pool math is wrong without it."
+    },
+    {
+      "id": "lakbay-fb-68",
+      "name": "Marco Bianchi",
+      "email": "marco.bianchi.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDOH46NDHS2Y26VA35SPY4VRCNPWFLVMJLO2ABLZ4T5ITGWMUUZQDYKA",
+      "feedback": "The organizer role should be transferable; currently only the creator can edit the trip details."
+    },
+    {
+      "id": "lakbay-fb-69",
+      "name": "Cordelia Vance",
+      "email": "cordelia.vance.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDLL4HVOGOFW4P2P7O5SBCM6HAOQMBOTTKGA5OEUP5ZVHFEHCT25BPZC",
+      "feedback": "Receipt upload for shared meals should accept multiple photos at once — iPhone users take 3-4 per meal."
+    },
+    {
+      "id": "lakbay-fb-70",
+      "name": "Liam O'Connor",
+      "email": "liamoconnor92@gmail.com",
+      "role": "member",
+      "publicKey": "GBFSUPFOWIXNZXIJTBGEWU4AMZA4MWCLF2OISPBAWBQV22FBONN3QFOV",
+      "feedback": "After the trip, the leftover pool should auto-redistribute to members, not sit in the contract forever."
     }
   ],
-  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1jHmOivw_lRpQlc4g_fq8YdT_ecuQV4GMFlVrAm32r6s/edit?usp=drivesdk",
+  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk",
   "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfV6GxxKQl8JAoOpOcoiGyTnRsYvPx2XbWlH02pMykMsT7tvg/viewform"
 }
