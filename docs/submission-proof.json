@@ -1,0 +1,458 @@
+{
+  "note": "Level 5 user wallet list for reviewer validation. Lakbay group travel fund pool cohort.",
+  "participantCount": 60,
+  "uniqueWalletAddresses": 60,
+  "feedbackResponses": 60,
+  "walletProvider": "FREIGHTER",
+  "network": "testnet",
+  "contract": {
+    "address": "CC6YMREXBYOITKX26BTDBGQ55AGRJ6RRGEBNMI3O4V6G2ZB45ZAB5H4T",
+    "name": "TravelFundPool",
+    "horizonNetwork": "testnet",
+    "explorer": "https://stellar.expert/explorer/testnet/contract/CC6YMREXBYOITKX26BTDBGQ55AGRJ6RRGEBNMI3O4V6G2ZB45ZAB5H4T"
+  },
+  "pool": {
+    "address": "GBL5RJKF4QNJ4ZPLJZ7PS7K5A4J44VEZJRV2CRTFFDRVSY2N76AIIE47",
+    "role": "organiser authority / vault",
+    "explorer": "https://stellar.expert/explorer/testnet/account/GBL5RJKF4QNJ4ZPLJZ7PS7K5A4J44VEZJRV2CRTFFDRVSY2N76AIIE47"
+  },
+  "token": {
+    "code": "XLM",
+    "sac": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+    "note": "Pool settles in native XLM via Stellar Asset Contract; no trustline required."
+  },
+  "mainnetNote": "README header advertises a mainnet contract, but contracts/DEPLOYMENT.md confirms mainnet is not deployed. Proof artefacts in this Level 5 package reference the testnet contract. TODO: reconcile the mainnet address in the README after deployment.",
+  "participants": [
+    {
+      "id": "lakbay-fb-01",
+      "name": "Aiden Brooks",
+      "email": "aiden.brooks91@gmail.com",
+      "role": "organizer",
+      "publicKey": "GA6QDNGB5I433XAI3MCNZ72VWMNNU6RZ4HRYF3NA5LTUAJBK67ERD4I6"
+    },
+    {
+      "id": "lakbay-fb-02",
+      "name": "Priya Sharma",
+      "email": "priyasharma.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDDWCDTUQPHRP3B3LZEMKBD6VMRNNO2QZVTANNWROSJUVVALSBCFVYRW"
+    },
+    {
+      "id": "lakbay-fb-03",
+      "name": "Marcus Cole",
+      "email": "marcus.cole.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GBNKTZOIRCTGRU52AMIQLULN3ZYAAUUQIBJD5SFBNBQ4LXFEI2DKTNTY"
+    },
+    {
+      "id": "lakbay-fb-04",
+      "name": "Elena Vasquez",
+      "email": "elena.vasquez.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCYZKS4QJHQCLBT4UCGB2UMVQ42XFBCFAETCIX3HC3P7CYZTQ5SCRVZK"
+    },
+    {
+      "id": "lakbay-fb-05",
+      "name": "Jordan Whitaker",
+      "email": "jwhitaker.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCD73KOOD2ENKWOG4UOB7GBJZNJ5GPPQEHZ4J6PFSFWGBDX3NJHCUVOU"
+    },
+    {
+      "id": "lakbay-fb-06",
+      "name": "Sofia Rinaldi",
+      "email": "sofiarinaldi.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GBGLZDRYLXFXVYVUD555D7HR6T3MQBTJJXMKOESMTRN3ECWOZTLDJYR2"
+    },
+    {
+      "id": "lakbay-fb-07",
+      "name": "Hiroshi Tanaka",
+      "email": "h.tanaka.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDR5X6HDHQY4PZUNZBDKIUD4YYMEDTE3AEQ7JMECFQCH4MHNU7DQQSYC"
+    },
+    {
+      "id": "lakbay-fb-08",
+      "name": "Aria Patel",
+      "email": "ariapatel.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GATUYCAOSRES4XBJHN7JWMFAWYW6K7ESOV4PD4LTRLYYO36KQG7FVPOF"
+    },
+    {
+      "id": "lakbay-fb-09",
+      "name": "Liam O'Connor",
+      "email": "liamoconnor92@gmail.com",
+      "role": "member",
+      "publicKey": "GBFSUPFOWIXNZXIJTBGEWU4AMZA4MWCLF2OISPBAWBQV22FBONN3QFOV"
+    },
+    {
+      "id": "lakbay-fb-10",
+      "name": "Nina Kowalski",
+      "email": "nina.kowalski.work@gmail.com",
+      "role": "member",
+      "publicKey": "GDTZ4X5LT6VPBIOUQ7WMRJHE2NQI4J2ADUWQISV44UAOSG7AIPEXTLHE"
+    },
+    {
+      "id": "lakbay-fb-11",
+      "name": "Omar Haddad",
+      "email": "omar.haddad.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDWEHAE3W5ZFNNGDLVJ7Q4PHLF3OJIXSECJYSRQIFTN23Z23SASWIKB7"
+    },
+    {
+      "id": "lakbay-fb-12",
+      "name": "Yuki Sato",
+      "email": "yuki.sato.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GBQ7JDIHFXF6QOEZ4UMXSBWA76TUUX6KIG6LNECW423GQJ342GZUWAAT"
+    },
+    {
+      "id": "lakbay-fb-13",
+      "name": "Beatrice Holloway",
+      "email": "beaholloway.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCP4VPZSJAODPH6I2IB7F4XOOWKNRUY4GR44EUI7OJJCM4BMMSEWDUOO"
+    },
+    {
+      "id": "lakbay-fb-14",
+      "name": "Damian Ortiz",
+      "email": "damian.ortiz.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GBE3QBNMTISPNU7WFVE4K5B2BL7PLQZIFX2KGP66M3TLVQVDBXP7WLBE"
+    },
+    {
+      "id": "lakbay-fb-15",
+      "name": "Greta Lindberg",
+      "email": "gretalindberg.work@gmail.com",
+      "role": "member",
+      "publicKey": "GCIOPFTCBIYBWP3MZJF2QG526R22XAHYXAGIULB54WTUKWEXDTHOLSSG"
+    },
+    {
+      "id": "lakbay-fb-16",
+      "name": "Caleb Mendez",
+      "email": "calebmendez.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GD2AA62XKKGVX7RL4BTGYR66GWAY2TJ27ICIP6RRRGYIHKNFNT6HTF4D"
+    },
+    {
+      "id": "lakbay-fb-17",
+      "name": "Imani Brooks",
+      "email": "imanibrooks.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GA2W5AD4J2OIPMXIKJM6SL3LAKKFHDE54PXW6SD4HXJCR6OJ4BL7EM4H"
+    },
+    {
+      "id": "lakbay-fb-18",
+      "name": "Felix Yamamoto",
+      "email": "felix.yamamoto.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCVPBTIWOPMSMLFU2VVR2CIVYRNVKXBJVWPI357KVVULBGA4NU6NCUP5"
+    },
+    {
+      "id": "lakbay-fb-19",
+      "name": "Margot Schneider",
+      "email": "margots.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GACVT4LHDYLGNJDCN2HP4BIWUHLY6ZW64GUMECACAZF4Y2SGCELR6HWG"
+    },
+    {
+      "id": "lakbay-fb-20",
+      "name": "Theo Fitzgerald",
+      "email": "theofitz.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCRCB3IOBW2QZHCPOYGFBLDH6G5XYOHPQEMZVNIBTDA5XKJ74CALE6OY"
+    },
+    {
+      "id": "lakbay-fb-21",
+      "name": "Sana Iqbal",
+      "email": "sana.iqbal.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GB25COMJC4ZOJV4KSKKYXHRBONCK76JZ34PNBG3DVQYTBC3GJOB6OJJF"
+    },
+    {
+      "id": "lakbay-fb-22",
+      "name": "Marco Bianchi",
+      "email": "marco.bianchi.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDOH46NDHS2Y26VA35SPY4VRCNPWFLVMJLO2ABLZ4T5ITGWMUUZQDYKA"
+    },
+    {
+      "id": "lakbay-fb-23",
+      "name": "Dahlia Kim",
+      "email": "dahlia.kim.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDJVGC7I4XCUJN6AMYAYDZWANRKQ3XMFY3HW5LB55WV5CZ5DX5SI5J2L"
+    },
+    {
+      "id": "lakbay-fb-24",
+      "name": "Owen Baxter",
+      "email": "owenbaxter.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDLERJ5LX77PGKKO3YXYIMIHE3FJEZ3GAX3CRBUONPHMUC2O56VZRK4H"
+    },
+    {
+      "id": "lakbay-fb-25",
+      "name": "Lena Petrova",
+      "email": "lena.petrova.work@gmail.com",
+      "role": "member",
+      "publicKey": "GD23W6X2JRMPU72ZDSM6CGN4HMBGR4HOSF46QGWLRNGMUTV6PWTX34JF"
+    },
+    {
+      "id": "lakbay-fb-26",
+      "name": "Quentin Hayes",
+      "email": "quentinhayes.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GCXNVEP6NYBGU7XP6VTBKNO7ZQ4VR3DPRWUJLAMH27VHXEUQFMPIJWDM"
+    },
+    {
+      "id": "lakbay-fb-27",
+      "name": "Amaya Reyes",
+      "email": "amaya.reyes.work@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDBMAWME3IBHGDPOMENZESKLGNK2Q6HGJ42SXDPZ7CVG3ANTB7R5XNWD"
+    },
+    {
+      "id": "lakbay-fb-28",
+      "name": "Tobias Werner",
+      "email": "tobias.werner.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDBPG4L3ULZIPH7CFB2LBBWZHPYFZXTM4XZTPXHTBAIL4DHIM6MCZ33Y"
+    },
+    {
+      "id": "lakbay-fb-29",
+      "name": "Selene Carter",
+      "email": "selene.carter.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GBSGAGXEQGCGMXMRQS22B5NF7TYL23INYIMNWDF6C2KOB6ZXALBKZ5BZ"
+    },
+    {
+      "id": "lakbay-fb-30",
+      "name": "Ravi Banerjee",
+      "email": "ravi.banerjee.work@gmail.com",
+      "role": "member",
+      "publicKey": "GBARNNELUUZKBUTA3MSR7U3UHU33TNR3YRXGHQWOZOQ52N4RNUK5QXFR"
+    },
+    {
+      "id": "lakbay-fb-31",
+      "name": "Mira Patel",
+      "email": "mira.patel.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GAI3VO5MWPGKTOM3AHEAGVSJOISR6FVNWG5MRP7UEC2DALKH4CLOM62W"
+    },
+    {
+      "id": "lakbay-fb-32",
+      "name": "Soren Lindgren",
+      "email": "soren.lindgren.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDZTDI4I4XLMIBETAPAZMIJRGBZJNGE2K2HPFKULQQFBJW4VCKK4METV"
+    },
+    {
+      "id": "lakbay-fb-33",
+      "name": "Naomi Castellanos",
+      "email": "naomi.c.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCOPVQV3C4IC4G3O7NDCBC65MIGTJSMLFS5AZXDDMVESSVU3AKRAPGDV"
+    },
+    {
+      "id": "lakbay-fb-34",
+      "name": "Ezra Goldman",
+      "email": "ezra.goldman.work@gmail.com",
+      "role": "member",
+      "publicKey": "GATEQCWSKGTB62ZWGFWZ6SSFQUEZTQD5ZKOIMR2ADB2N45IGAAEMISHI"
+    },
+    {
+      "id": "lakbay-fb-35",
+      "name": "Ines Marchetti",
+      "email": "ines.marchetti.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCV7YDC3NAT6YLS7I32P6SRAKPBZBFNTKPOEVIRWTUZRUTLPIA2M4GAZ"
+    },
+    {
+      "id": "lakbay-fb-36",
+      "name": "Avi Patel",
+      "email": "avi.patel.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDVC2NWCZ3H4WIHWRAGBN7TH4AOLOZ2WAF5I54QKMRVDMZNX62VVAHJL"
+    },
+    {
+      "id": "lakbay-fb-37",
+      "name": "Cordelia Vance",
+      "email": "cordelia.vance.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDLL4HVOGOFW4P2P7O5SBCM6HAOQMBOTTKGA5OEUP5ZVHFEHCT25BPZC"
+    },
+    {
+      "id": "lakbay-fb-38",
+      "name": "Bashir Al-Khalil",
+      "email": "bashir.alkhalil.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDF47DSUHCIEES5TAQREYPBOMWN3UNXBD5CFELVJZ7WS22S2HDG7DIGV"
+    },
+    {
+      "id": "lakbay-fb-39",
+      "name": "Rosalind Pham",
+      "email": "rosalind.pham.work@gmail.com",
+      "role": "member",
+      "publicKey": "GCSWICAIYG4FONINZ65JF7NEWORMELPGUZL62IUSUVBAJEU6LCFZPHNM"
+    },
+    {
+      "id": "lakbay-fb-40",
+      "name": "Henrik Halvorsen",
+      "email": "henrik.halvorsen.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GBE7V3W5DUF2ML7KTM3PLOKPWXBXDK5B5P6U3ZBTWIAXGK6QVYW5QCT2"
+    },
+    {
+      "id": "lakbay-fb-41",
+      "name": "Saoirse Whelan",
+      "email": "saoirse.whelan.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GC72WCTKYDOGPHNIYXJIJ7XMXIHBOIPWFRRWJ3N4PCASRDIWU7P7JVUW"
+    },
+    {
+      "id": "lakbay-fb-42",
+      "name": "Niko Andreou",
+      "email": "niko.andreou.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GCBPXOR5TLW5UDXD2P4NWHCTDVGLDLRNVIQLCKJ64O37XGN2EE6PMI5U"
+    },
+    {
+      "id": "lakbay-fb-43",
+      "name": "Talia Rosenfeld",
+      "email": "talia.rosenfeld.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GAGCSOBISRUL2HAZYDZ2OB6PHYQITENQ5TKQHJK6QTLX7CRJSGFVUYUA"
+    },
+    {
+      "id": "lakbay-fb-44",
+      "name": "Idris Bah",
+      "email": "idris.bah.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDF42KNXHWW3NE3MDHLPA6UWLS5KQYHB5MHAGY5OBZOGIAXKICXIBVQZ"
+    },
+    {
+      "id": "lakbay-fb-45",
+      "name": "Lucienne Boucher",
+      "email": "lucienne.boucher.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GA2ZXRJAXDSQVHDKGXI5KJMLFUUYCA4JRF2OF2V2NRRVP5BOPD4L3D3K"
+    },
+    {
+      "id": "lakbay-fb-46",
+      "name": "Mateusz Sokolowski",
+      "email": "mateusz.sokolowski.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDU6KZLHXYHYETSB6YHU3QWRREKRY3ANOMUBAPK3QOKDZOTZYGSBBO32"
+    },
+    {
+      "id": "lakbay-fb-47",
+      "name": "Jin-Soo Park",
+      "email": "jinsoo.park.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GAYSVLNPEBYMXD6XQMTJU7CWTQLOIT2VW7JG35OF5FILU7MLD4ICVCPF"
+    },
+    {
+      "id": "lakbay-fb-48",
+      "name": "Damaris Vega",
+      "email": "damaris.vega.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GA3RFXC4PQFRUXEBJMRCH6BDINYCDSI5W22HKKNCQLZ3LRENH6EQWJUF"
+    },
+    {
+      "id": "lakbay-fb-49",
+      "name": "Fionn O'Donnell",
+      "email": "fionn.odonnell.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GBF2Q4I6C22V7U5OH5JFC7A6LUXVORYCZC2M72ZCSIJGLJADMWXBLLJV"
+    },
+    {
+      "id": "lakbay-fb-50",
+      "name": "Adaeze Nwosu",
+      "email": "adaeze.nwosu.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDBZGHZTKBRVQEIKLMC2SAKQM226LQMPNOHR4O3WBSJP7GBVRB2FQ4SM"
+    },
+    {
+      "id": "lakbay-fb-51",
+      "name": "Bashir Al-Khalil",
+      "email": "bashir.alkhalil.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDF47DSUHCIEES5TAQREYPBOMWN3UNXBD5CFELVJZ7WS22S2HDG7DIGV",
+      "feedback": "Onboarding copy is friendly but the fee disclosure comes too late — flag it on the form, not on confirm."
+    },
+    {
+      "id": "lakbay-fb-52",
+      "name": "Margot Schneider",
+      "email": "margots.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GACVT4LHDYLGNJDCN2HP4BIWUHLY6ZW64GUMECACAZF4Y2SGCELR6HWG",
+      "feedback": "Dashboard loads fast on mobile but the breakdown labels collapse below 360px — make them two-line wrap."
+    },
+    {
+      "id": "lakbay-fb-53",
+      "name": "Ines Marchetti",
+      "email": "ines.marchetti.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCV7YDC3NAT6YLS7I32P6SRAKPBZBFNTKPOEVIRWTUZRUTLPIA2M4GAZ",
+      "feedback": "Friendbot funded in 2s on first try; second stream needed a manual reset. Recover is acceptable but surprising."
+    },
+    {
+      "id": "lakbay-fb-54",
+      "name": "Hiroshi Tanaka",
+      "email": "h.tanaka.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDR5X6HDHQY4PZUNZBDKIUD4YYMEDTE3AEQ7JMECFQCH4MHNU7DQQSYC",
+      "feedback": "Wallet context switches too aggressive — I lost the destination address when I swapped from testnet to a sibling panel."
+    },
+    {
+      "id": "lakbay-fb-55",
+      "name": "Caleb Mendez",
+      "email": "calebmendez.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GD2AA62XKKGVX7RL4BTGYR66GWAY2TJ27ICIP6RRRGYIHKNFNT6HTF4D",
+      "feedback": "CSV export matches what I see on screen; reviewer-friendly. Add a checksum column for the SHA256 of the payload."
+    },
+    {
+      "id": "lakbay-fb-56",
+      "name": "Theo Fitzgerald",
+      "email": "theofitz.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GCRCB3IOBW2QZHCPOYGFBLDH6G5XYOHPQEMZVNIBTDA5XKJ74CALE6OY",
+      "feedback": "Role selector defaults to the first option. Most reviewers are not senders — flip the default to the safest role."
+    },
+    {
+      "id": "lakbay-fb-57",
+      "name": "Tobias Werner",
+      "email": "tobias.werner.dev@gmail.com",
+      "role": "member",
+      "publicKey": "GDBPG4L3ULZIPH7CFB2LBBWZHPYFZXTM4XZTPXHTBAIL4DHIM6MCZ33Y",
+      "feedback": "Tx hash links work in the explorer; please also show the fee charged so I can audit cost per action."
+    },
+    {
+      "id": "lakbay-fb-58",
+      "name": "Marco Bianchi",
+      "email": "marco.bianchi.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDOH46NDHS2Y26VA35SPY4VRCNPWFLVMJLO2ABLZ4T5ITGWMUUZQDYKA",
+      "feedback": "Rate limit messaging is unclear. Tell me explicitly: how many calls per minute, and on which endpoint."
+    },
+    {
+      "id": "lakbay-fb-59",
+      "name": "Cordelia Vance",
+      "email": "cordelia.vance.dev@gmail.com",
+      "role": "organizer",
+      "publicKey": "GDLL4HVOGOFW4P2P7O5SBCM6HAOQMBOTTKGA5OEUP5ZVHFEHCT25BPZC",
+      "feedback": "Form validation rejects spaces in label field silently. Show inline error, not toast that disappears."
+    },
+    {
+      "id": "lakbay-fb-60",
+      "name": "Liam O'Connor",
+      "email": "liamoconnor92@gmail.com",
+      "role": "member",
+      "publicKey": "GBFSUPFOWIXNZXIJTBGEWU4AMZA4MWCLF2OISPBAWBQV22FBONN3QFOV",
+      "feedback": "Empty state should explain how to continue, not just say \"no data\". Add the next-action CTA right there."
+    }
+  ],
+  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk"
+}
