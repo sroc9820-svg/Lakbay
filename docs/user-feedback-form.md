@@ -27,4 +27,9 @@ The two URLs above (`<LAKBAY_GOOGLE_FORM_URL>` and `<LAKBAY_GOOGLE_SHEET_URL>`) 
 
 ## Sheet response export
 
-- Native Google Sheet response export: https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk
+- Native Google Sheet response export: https://docs.google.com/spreadsheets/d/1jHmOivw_lRpQlc4g_fq8YdT_ecuQV4GMFlVrAm32r6s/edit?usp=drivesdk
+
+
+## Live Form URL
+
+- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSfV6GxxKQl8JAoOpOcoiGyTnRsYvPx2XbWlH02pMykMsT7tvg/viewform
