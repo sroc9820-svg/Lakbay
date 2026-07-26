@@ -16,7 +16,7 @@
 - [x] **Screenshots of analytics or transaction activity** — `screen-shot/07-stats.jpg` plus the on-chain `TravelFundPool` contract stats
 - [x] **Updated README and documentation** — [proof package](docs/level5-proof-package.md)
 - [x] **User feedback iteration summary** — [50-user feedback log](docs/user-feedback-log.md) and [improvement summary](docs/level5-feedback-iteration-summary.md)
-- [x] **Google Sheet response export** — [open native Google Sheet](<LAKBAY_GOOGLE_SHEET_URL>)
+- [x] **Google Sheet response export** — [open native Google Sheet](https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk)
 
 ### Monthly submission
 
@@ -277,7 +277,7 @@ curl https://horizon-testnet.stellar.org/accounts/<publicKey>
 Two URLs are placeholders until the headless Drive auth flow is run:
 
 ```
-<LAKBAY_GOOGLE_SHEET_URL>    # native Google Sheet response export
+https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk    # native Google Sheet response export
 ```
 
 
