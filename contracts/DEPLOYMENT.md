@@ -24,8 +24,12 @@ Entrypoints:
          total_pooled, get_token, get_admin
   admin: set_admin, upgrade
 
-## Mainnet
-Contract ID: (not deployed — testnet only)
+## Mainnet (LIVE)
+Contract ID: CBTFUJR7QXX5GY4NUOS7IFZJTHIWY4L3WPLJGJFK3NXHDHRZ7FH33EW4
 Network passphrase: Public Global Stellar Network ; September 2015
 RPC: https://soroban.stellar.org
-Switch: set STELLAR_NETWORK=public in .env.local, redeploy via ./scripts/deploy.sh public
+Explorer: https://stellar.expert/explorer/public/contract/CBTFUJR7QXX5GY4NUOS7IFZJTHIWY4L3WPLJGJFK3NXHDHRZ7FH33EW4
+
+Confirmed live via the stellar.expert API (contract exists on the public network, created
+2026-07-12 UTC). Deploy-tx history — init tx hash, wasm hash, admin/deployer key, toolchain —
+wasn't recorded at deploy time and isn't reconstructed here.

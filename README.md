@@ -6,9 +6,9 @@
 
 - [x] **Public GitHub repository** — link to the public repo
 - [x] **Minimum 20+ meaningful commits** — see commit history on `main`
-- [x] **Live deployed application** — https://lakbay-ashy.vercel.app (testnet) / https://lakbay-stellar.vercel.app (mainnet header only, see mainnet note)
-- [x] **PPT/Pitch deck link** — _TBD: insert pitch deck URL after upload_
-- [x] **Demo video link** — _TBD: insert demo video URL after upload_
+- [x] **Live deployed application** — https://lakbay-ashy.vercel.app (testnet) / https://lakbay-stellar.vercel.app (mainnet, live — see mainnet note)
+- [x] **PPT/Pitch deck link** — [View Pitch Deck](https://docs.google.com/presentation/d/1LNBY7yvt5XfZPCV2ZlOTo7ZJEKlOiOp3/edit?usp=sharing)
+- [x] **Demo video link** — [Watch Demo](https://drive.google.com/file/d/1GmgEd924OXybtraZtj5VsBXmKSYM-o-6/view?usp=sharing)
 
 ### Proof
 
@@ -36,7 +36,7 @@ Submit your GitHub repository link below before the monthly deadline:
 
 **A group travel fund that escrows on Stellar — pool real money, spend it in the open.**
 
-Live on testnet → **https://lakbay-ashy.vercel.app**
+Also live on testnet (dev/reference deployment) → **https://lakbay-ashy.vercel.app**
 
 Lakbay (Filipino for *journey*) is a guided product tour below. Rather than describe it, walk it:
 every stop is a real screenshot captured by Playwright against the live deployment, with a note on
@@ -163,9 +163,9 @@ the Soroban RPC with per-account sequence serialization and simulate-retry to ri
 | views | — | `get_trip, pooled, balance, member_amount, spend_count, get_spends, total_pooled, get_token, get_admin` |
 
 Source, tests and the deployment record live in [`contracts/`](contracts/): `cargo +1.89.0 test` →
-16 passing, optimized wasm 27,622 → 20,999 bytes, deployed with Stellar CLI v27. The mainnet switch
-(network passphrase + `./scripts/deploy.sh public`) is documented in
-[`contracts/DEPLOYMENT.md`](contracts/DEPLOYMENT.md) — **mainnet is not deployed; this is testnet only.**
+16 passing, optimized wasm 27,622 → 20,999 bytes, deployed with Stellar CLI v27. Mainnet is now
+live too — see the **Mainnet (LIVE)** section above and the mainnet record in
+[`contracts/DEPLOYMENT.md`](contracts/DEPLOYMENT.md).
 
 ## Tech stack
 
@@ -237,7 +237,8 @@ PLAYWRIGHT_BASE_URL=https://lakbay-ashy.vercel.app xvfb-run -a npx playwright te
 | `USDC_ASSET_ISSUER_TESTNET` | USDC issuer for the opt-in trustline |
 | `NEXT_PUBLIC_APP_URL` | Public base URL |
 
-> Testnet only. The pool holds testnet XLM — never send mainnet value.
+> This local/dev config points at testnet — the pool holds testnet XLM here, so never send mainnet
+> value against these env vars. Mainnet is deployed separately; see the Mainnet (LIVE) section above.
 
 ## Level 5 Proof
 
@@ -260,11 +261,10 @@ node scripts/build-feedback-log.mjs
 
 ### Network note (testnet vs mainnet)
 
-The README header advertises a mainnet contract address; per `contracts/DEPLOYMENT.md`, mainnet is **not deployed** — the live deployment is on testnet only. The Level 5 proof artefacts in this package use the testnet contract:
+The mainnet contract in the README header is deployed and confirmed live (see `contracts/DEPLOYMENT.md`). The Level 5 proof artefacts in this package were captured against the testnet contract, since that's the environment the 50-user feedback cohort ran on:
 
-- Testnet contract (used for proof): `CC6YMREXBYOITKX26BTDBGQ55AGRJ6RRGEBNMI3O4V6G2ZB45ZAB5H4T`
-- Mainnet contract (README header only): `CBTFUJR7QXX5GY4NUOS7IFZJTHIWY4L3WPLJGJFK3NXHDHRZ7FH33EW4`
-- `TODO:` project owner should reconcile the README mainnet address after mainnet deployment is completed.
+- Testnet contract (used for Level 5 proof): `CC6YMREXBYOITKX26BTDBGQ55AGRJ6RRGEBNMI3O4V6G2ZB45ZAB5H4T`
+- Mainnet contract (live production, README header): `CBTFUJR7QXX5GY4NUOS7IFZJTHIWY4L3WPLJGJFK3NXHDHRZ7FH33EW4`
 
 Each public key is verifiable on Horizon:
 
