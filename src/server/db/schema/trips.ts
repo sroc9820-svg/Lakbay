@@ -6,7 +6,7 @@ export const tripStatusEnum = pgEnum('trip_status', ['open', 'closed']);
 // contract, keyed by sha256(this row's id). Members contribute XLM into the pool
 // (member-signed contract invoke); the organiser spends from the pool to a payee
 // (organiser-signed invoke) and every move is an immutable on-chain ledger entry.
-export const trips = pgTable('trips', {
+export const trips = pgTable('lakbay_trips', {
   id: uuid('id').primaryKey().defaultRandom(),
   name: text('name').notNull(),
   destination: text('destination').notNull().default(''),

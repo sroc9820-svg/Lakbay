@@ -4,7 +4,7 @@ import { trips } from './trips';
 // A real on-chain payout from the TravelFundPool contract to a payee (vendor),
 // or an end-of-trip refund back to a member — both appended to the contract's
 // immutable spend ledger and mirrored here for fast reads.
-export const spends = pgTable('spends', {
+export const spends = pgTable('lakbay_spends', {
   id: uuid('id').primaryKey().defaultRandom(),
   tripId: uuid('trip_id')
     .notNull()

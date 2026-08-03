@@ -2,7 +2,7 @@ import { pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { trips } from './trips';
 
 // A real on-chain contribution from a member's wallet into the trip's pool contract.
-export const contributions = pgTable('contributions', {
+export const contributions = pgTable('lakbay_contributions', {
   id: uuid('id').primaryKey().defaultRandom(),
   tripId: uuid('trip_id')
     .notNull()

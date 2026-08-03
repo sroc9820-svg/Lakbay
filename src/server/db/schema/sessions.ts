@@ -2,7 +2,7 @@ import { boolean, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 
 // SEP-10 web-auth sessions. A challenge row is created on /challenge and flipped
 // to verified on /verify once the wallet signature checks out.
-export const sessions = pgTable('sessions', {
+export const sessions = pgTable('lakbay_sessions', {
   id: uuid('id').primaryKey().defaultRandom(),
   publicKey: text('public_key').notNull(),
   nonce: text('nonce').notNull(),
