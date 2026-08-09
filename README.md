@@ -22,7 +22,7 @@
 
 Submit your GitHub repository link below before the monthly deadline:
 
-**https://github.com/your-org/Lakbay**
+**https://github.com/sroc9820-svg/Lakbay**
 
 ---
 
