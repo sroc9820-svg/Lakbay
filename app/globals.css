@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-display: var(--font-sora), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  /* Lakbay brand palette — deep ocean teal + warm sunset amber on warm sand */
+  --color-sand: #f7f3ec;
+  --color-sand-deep: #efe7d8;
+  --color-ink: #102a2e;
+  --color-ink-soft: #3c5256;
+  --color-teal: #0f766e;
+  --color-teal-deep: #0b5d56;
+  --color-teal-bright: #14b8a6;
+  --color-amber: #f59e0b;
+  --color-amber-deep: #d97706;
+  --color-coral: #fb7185;
+  --color-line: #e3dccd;
+  --color-line-strong: #d2c8b4;
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Ticket / boarding-pass notch motif used on fund cards */
+.ticket {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--color-line);
+  border-radius: 18px;
+}
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: var(--color-sand);
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ticket::before {
+  left: -12px;
+}
+.ticket::after {
+  right: -12px;
+}
+
+.dotline {
+  background-image: linear-gradient(90deg, var(--color-line-strong) 38%, transparent 0);
+  background-size: 9px 2px;
+  background-repeat: repeat-x;
+  height: 2px;
+}
+
+.hero-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.float-up {
+  animation: float-up 0.5s ease forwards;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #ece4d6 25%, #f4eee2 37%, #ece4d6 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 8px;
+}
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
