@@ -15,6 +15,8 @@ import {
   readTrip,
   submit,
   travelFundContractId,
+  verifyContributeInvoke,
+  verifySpendInvoke,
 } from '@/server/stellar/soroban';
 import { getTripRow, setUsdcEnabled } from './trip.service';
 
@@ -66,15 +68,15 @@ export async function confirmContribution(input: {
   amount: string;
 }) {
   const trip = await getTripRow(input.tripId);
-  const { display } = validateAmount(input.amount);
+  const { contributorWallet, amount } = verifyContributeInvoke(input.signedXdr, trip.id);
   const res = await submit(input.signedXdr);
   const rows = await db
     .insert(contributions)
     .values({
       tripId: trip.id,
-      contributorWallet: input.contributorWallet,
+      contributorWallet,
       contributorLabel: (input.contributorLabel ?? '').trim().slice(0, 40),
-      amount: display,
+      amount,
       asset: 'XLM',
       txHash: res.hash,
     })
