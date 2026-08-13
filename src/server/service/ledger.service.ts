@@ -177,7 +177,15 @@ export async function confirmEnableUsdc(input: {
   tripId: string;
   signedXdr: string;
 }): Promise<{ txHash: string }> {
+  const trip = await getTripRow(input.tripId);
   const tx = TransactionBuilder.fromXDR(input.signedXdr, NETWORK_PASSPHRASE);
+  if (tx.source !== trip.organizerWallet) {
+    throw new AppError(
+      'FORBIDDEN',
+      'Only the trip organiser can flip USDC-enabled on this fund',
+      403,
+    );
+  }
   const res = await server.submitTransaction(tx);
   await setUsdcEnabled(input.tripId, true);
   return { txHash: res.hash };
