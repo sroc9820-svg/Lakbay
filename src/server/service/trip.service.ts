@@ -8,6 +8,7 @@ import {
   readTrip as readOnchainTrip,
   submit,
   travelFundContractId,
+  verifyOpenTripInvoke,
   waitForTripReadable,
   xlmSac,
 } from '@/server/stellar/soroban';
@@ -93,6 +94,14 @@ export async function confirmOpenTrip(input: {
   signedXdr: string;
 }): Promise<PublicTrip> {
   const trip = await getTripRow(input.tripId);
+  const { organizerWallet } = verifyOpenTripInvoke(input.signedXdr, trip.id);
+  if (organizerWallet !== trip.organizerWallet) {
+    throw new AppError(
+      'FORBIDDEN',
+      'Only the trip organiser can open this fund on-chain',
+      403,
+    );
+  }
   const res = await submit(input.signedXdr);
   await waitForTripReadable(trip.id).catch(() => false);
   const rows = await db
