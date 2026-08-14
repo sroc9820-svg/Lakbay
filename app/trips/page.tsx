@@ -25,17 +25,36 @@ export default function TripsPage() {
   const router = useRouter();
   const { publicKey, sign } = useWallet();
   const [trips, setTrips] = useState<Trip[] | null>(null);
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
+  const [loadingMore, setLoadingMore] = useState(false);
   const [name, setName] = useState('');
   const [destination, setDestination] = useState('');
   const [creating, setCreating] = useState(false);
 
   function load() {
     api
-      .get<Trip[]>('/api/trips')
-      .then(setTrips)
+      .get<{ trips: Trip[]; nextCursor: string | null }>('/api/trips')
+      .then((page) => {
+        setTrips(page.trips);
+        setNextCursor(page.nextCursor);
+      })
       .catch(() => setTrips([]));
   }
   useEffect(load, []);
+
+  async function loadMore() {
+    if (!nextCursor || loadingMore) return;
+    setLoadingMore(true);
+    try {
+      const page = await api.get<{ trips: Trip[]; nextCursor: string | null }>(
+        `/api/trips?cursor=${encodeURIComponent(nextCursor)}`,
+      );
+      setTrips((prev) => [...(prev ?? []), ...page.trips]);
+      setNextCursor(page.nextCursor);
+    } finally {
+      setLoadingMore(false);
+    }
+  }
 
   async function create(e: React.FormEvent) {
     e.preventDefault();
@@ -131,6 +150,19 @@ export default function TripsPage() {
                   <ArrowRight className="h-5 w-5 shrink-0 text-ink-soft transition-transform group-hover:translate-x-1 group-hover:text-teal" />
                 </Link>
               ))}
+
+              {nextCursor && (
+                <div className="mt-4 flex justify-center">
+                  <Button
+                    variant="outline"
+                    onClick={loadMore}
+                    loading={loadingMore}
+                    disabled={loadingMore}
+                  >
+                    {loadingMore ? 'Loading…' : 'Load more funds'}
+                  </Button>
+                </div>
+              )}
             </div>
           </section>
 
