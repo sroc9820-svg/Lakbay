@@ -16,31 +16,39 @@ export type Stats = {
   volumeXlm: string;
 };
 
-export async function getStats(): Promise<Stats> {
+function notInDemo(column: Parameters<typeof sql>[0]): ReturnType<typeof sql> {
   const demoList = Array.from(DEMO_KEYS);
-  const notDemo = demoList.length
-    ? sql`${sessions.publicKey} not in (${sql.join(
-        demoList.map((k) => sql`${k}`),
-        sql`, `,
-      )})`
-    : sql`true`;
+  if (demoList.length === 0) return sql`true`;
+  return sql`${column} not in (${sql.join(
+    demoList.map((k) => sql`${k}`),
+    sql`, `,
+  )})`;
+}
 
+export async function getStats(): Promise<Stats> {
   const [loginRow] = await db
     .select({
       logins: sql<number>`count(*)::int`,
       wallets: sql<number>`count(distinct ${sessions.publicKey})::int`,
     })
     .from(sessions)
-    .where(and(eq(sessions.verified, true), eq(sessions.isDemo, false), notDemo));
+    .where(and(eq(sessions.verified, true), eq(sessions.isDemo, false), notInDemo(sessions.publicKey)));
 
-  const [tripRow] = await db.select({ n: sql<number>`count(*)::int` }).from(trips);
+  const [tripRow] = await db
+    .select({ n: sql<number>`count(*)::int` })
+    .from(trips)
+    .where(notInDemo(trips.organizerWallet));
   const [contribRow] = await db
     .select({
       n: sql<number>`count(*)::int`,
       vol: sql<string>`coalesce(sum(case when ${contributions.asset} = 'XLM' then ${contributions.amount}::numeric else 0 end), 0)::text`,
     })
-    .from(contributions);
-  const [spendRow] = await db.select({ n: sql<number>`count(*)::int` }).from(spends);
+    .from(contributions)
+    .where(notInDemo(contributions.contributorWallet));
+  const [spendRow] = await db
+    .select({ n: sql<number>`count(*)::int` })
+    .from(spends)
+    .where(notInDemo(spends.recipient));
 
   return {
     uniqueWallets: loginRow?.wallets ?? 0,
